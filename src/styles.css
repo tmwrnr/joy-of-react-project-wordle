@@ -176,6 +176,13 @@ h1 {
   will-change: transform;
 }
 
+.banner > button {
+  border: 2px solid white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
 .happy.banner {
   background: var(--color-success);
   color: white;
@@ -229,4 +236,40 @@ h1 {
   to {
     transform: translateY(0%);
   }
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.keyboard-row {
+  display: flex;
+  gap: 4px;
+}
+.keyboard-char {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--color-gray-900);
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.keyboard-char.correct {
+  background: var(--color-success);
+  color: white;
+}
+.keyboard-char.incorrect {
+  background: var(--color-gray-300);
+  color: white;
+}
+.keyboard-char.misplaced {
+  background: var(--color-warning);
+  color: white;
 }
